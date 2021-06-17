@@ -9,17 +9,14 @@ public class Main {
 	
 	public static void main(String[] args) {
 
-		User kaan = new User(1, "Kaan", "Mönün", "ahmetkaan.monun@outlook.com", "1234567");
-
-		User ahmet = new User(2, "Ahmet", "Mönünu", "ahmetkaan.monun@outlook.com", "12345678");
+		User keriman = new User(1, "Keriman", "Alparslan", "k.alparslan164@gmail.com", "1234567");
 
 		UserManager manager = new UserManager(new HipernateUserDao(), new GoogleManagerAdapter());
 
-		manager.signin(kaan, "ahmetkaanmonun@outlook.com", "1234567");
+		manager.signin(keriman, "k.alparslan164@gmail.com", "1234567");
 
-		manager.signup(kaan);
+		manager.signup(keriman);
 
-		manager.signup(ahmet);
 	}
 
 }
